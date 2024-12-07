@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #007aff);
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cell:hover {
+    background: #e0e0e0;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background: #ccc;
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#reset-btn:hover {
+    background: #45a049;
+}
